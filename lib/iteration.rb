@@ -1,11 +1,15 @@
-def join_ingredients(src)
+def join_ingredients(array_1)
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
   # Build a new Array that contains strings where each pair of foods is
-  # inserted into this template:
-  #
-  # "I love (inner array element 0) and (inner array element 1) on my pizza""
+  array_1.length.times do
+    element1 = array_1[0][0]
+    element2 = array_1[0][1]
+    puts "I love", element1, "and", element2, "on my pizza"
+  end
+return join_ingredients(array_1)
   # As such, there should be a new String for each inner array, or pair
+
 end
 
 def find_greater_pair(src)
